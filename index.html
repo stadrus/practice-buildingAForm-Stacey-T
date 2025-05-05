@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <h1>Feedback Form</h1>
+        <fieldset>
+            <legend>Name</legend>
+            <label for="name"></label>
+            <input type="text" id="name" name="name"placeholder = "Enter your full name">
+        </fieldset>
+        
+        <h4>Email</h4>
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="example@example.com">
+
+        <h4>Password</h4>
+            <label for="Password"></label>
+            <input type="password" id="password" name="password" required placeholder="Password">
+
+        <fieldset>
+            <legend>Feedback Category</legend>
+            <label for="Feedback Category"></label>
+            <select id="feedback category" name="feedback category">
+                <option value="Front End"></option>
+                <option value="Back End"></option>
+                <option value="Customer Service"></option>
+            </select>
+        </fieldset>
+
+            <label for="Preferred Contact Method"></label>
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <label for="email">
+                    <input type="radio" id="email" name="contact" value="email">
+            Email
+                </label>
+                <label for="phone">
+                    <input type="radio" id="phone" name="contact" value="phone">
+            Phone
+                </label>
+            </fieldset>
+
+        <h4>Additional Features of Interest</h4>
+        <fieldset>
+            <legend>Choose Your Interests:</legend>
+            <label for="coding">
+                <input type="checkbox" id="coding" name="interests" value="coding"> Coding
+            </label>
+            <label for="design">
+                <input type="checkbox" id="design" name="interests" value="design"> Design
+            </label>
+         </fieldset>
+        
+        <h4>Comments</h4>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message here"></textarea>
+
+            <input type="submit" value="Submit">
+    </form>   
+</body>
+</html>
